@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form id="form-id">
+    <label>FirstName</label><input type="text"  id="fname"><br>
+    
+    <label>LastName</label> <input type="text" id="lname"><br>
+
+    <label>E-mail</label><input type="email" id="mail"><br>
+ 
+
+        <button onclick=fun()> submit </a></button>
+        <a href="https://web.whatsapp.com/"  style="text-decoration: none;" id="link">
+      </form>
+   
+    <script>
+      function fun(){
+        var a=document.getElementById('fname').value;
+        var b=document.getElementById('lname').value;
+        var c=document.getElementById('mail').value;
+        if(a!=null && b!=null && c!=null)
+         document.getElementById('link').value;
+        if(a==null)
+        alert('enter the First Name');
+        if(b==null)
+        alert('enter the last name');
+        if(c==null)
+        alert('enter valid email');
+
+      
+      }
+    </script>
+</body>
+</html>
