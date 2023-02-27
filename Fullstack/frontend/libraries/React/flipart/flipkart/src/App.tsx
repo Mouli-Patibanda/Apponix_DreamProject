@@ -1,6 +1,10 @@
-import {Myh1} from './app/component/header/Myh1'
-import { Myh2 } from './app/component/header/Myh2'
+//import {Myh1} from './app/component/header/Myh1'
+//import { PrintName } from './app/component/header/PrintName'
+
+import { DifferentWaysToCallAFunction } from './app/pages'
 export const App=()=>{
-  return <><Myh1/>
-  <Myh2/></>
+  return <>
+  {/* <PrintName priority={false} name={'Wrong statement...'} size={50}/></> */}
+  { <DifferentWaysToCallAFunction/> }
+  </>
 }
