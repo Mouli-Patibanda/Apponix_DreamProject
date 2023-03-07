@@ -1,10 +1,24 @@
 //import {Myh1} from './app/component/header/Myh1'
 //import { PrintName } from './app/component/header/PrintName'
+import { BrowserRouter as Router,Routes,Route} from 'react-router-dom'
+import {About,Contact,Home}from './app/pages'
+// import { Outlet, Link } from "react-router-dom";
 
-import { DifferentWaysToCallAFunction } from './app/pages'
+
+
+
+
 export const App=()=>{
-  return <>
+  return (<>
+  
   {/* <PrintName priority={false} name={'Wrong statement...'} size={50}/></> */}
-  { <DifferentWaysToCallAFunction/> }
-  </>
+  <Router>
+    <Routes>
+   <Route path="/about" element={<About/>}/>
+   <Route path="/contact" element={<Contact/>}/>
+   <Route path="/home" element={<Home/>}/>
+   
+    </Routes>
+  </Router>
+  </>)
 }
