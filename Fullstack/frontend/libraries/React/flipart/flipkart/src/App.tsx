@@ -1,7 +1,7 @@
 //import {Myh1} from './app/component/header/Myh1'
 //import { PrintName } from './app/component/header/PrintName'
 import { BrowserRouter as Router,Routes,Route} from 'react-router-dom'
-import { FirsthookUseState } from './app/component/notes/hooks/useEffect/FirsthookUseState'
+import { FirsthookUseState } from './app/component/notes/hooks/useState/FirsthookUseState'
 import {About,Contact,DifferentWaysToCallAFunction,Home, UserLogin,}from './app/pages'
 // import { Outlet, Link } from "react-router-dom";
 
