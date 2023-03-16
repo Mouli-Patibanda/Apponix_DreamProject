@@ -5,16 +5,16 @@ import { MultiplewaysOfCallingCss } from "../../component/notes/css/Multipleways
 import { UserLogin } from "../login"
 
 export const Home:React.FC<{}>=()=>{
-    var [userName,setUserName]=useState('')
+    var [username,setUserName]=useState('')
     var locate=useLocation()  
     useEffect(()=>{
-        setUserName(locate.state.userLogin)
+        setUserName(locate.state.userName)
     },[])
    
     return<>
 
    <Container maxWidth="lg">
-    <h1>Welcome {userName}</h1>
+    <h1>Welcome {username}</h1>
     {/* <MultiplewaysOfCallingCss/> */}
    </Container>
     </>

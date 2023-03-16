@@ -28,7 +28,7 @@ export const UserLogin:React.FC<{}>=()=>{
  const handlelogin=()=>{
   console.log(userLogin)
   console.log(userPassword)
-  navigate('/home',{state:{userLogin}})
+  navigate('/home',{state:{userName:userLogin}})
 
  }
 
