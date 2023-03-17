@@ -2,6 +2,7 @@ import Container from "@mui/material/Container"
 import { useEffect, useState } from "react"
 import { useLocation } from "react-router-dom"
 import { MultiplewaysOfCallingCss } from "../../component/notes/css/MultiplewaysOfCallingCss"
+import TopNavBar from "../../component/TopNavBar/TopNavBar"
 import { UserLogin } from "../login"
 
 export const Home:React.FC<{}>=()=>{
@@ -12,10 +13,10 @@ export const Home:React.FC<{}>=()=>{
     },[])
    
     return<>
-
+<TopNavBar/>
    <Container maxWidth="lg">
     <h1>Welcome {username}</h1>
-    {/* <MultiplewaysOfCallingCss/> */}
+    <MultiplewaysOfCallingCss/>
    </Container>
     </>
 }
