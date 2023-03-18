@@ -159,7 +159,7 @@ export default function TopNavBar() {
     
   return (
     <Box sx={{ flexGrow: 1 }}>
-      <AppBar position="static">
+      <AppBar position="relative">
         <Toolbar>
           <IconButton
             size="large"
