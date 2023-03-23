@@ -3,6 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import img1 from './../../../assets/images/1.jpg'
 import img2 from './../../../assets/images/2.jpg'
 import img3 from './../../../assets/images/3.png'
+import img4 from './../../../assets/images/4.webp'
 
 function Myslider() {
   return (
@@ -11,7 +12,7 @@ function Myslider() {
         <img
         height='400px'
           className="d-block w-100"
-          src={img1}        />
+          src={img4}       />
         <Carousel.Caption>
           <h3>First slide label</h3>
           <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
