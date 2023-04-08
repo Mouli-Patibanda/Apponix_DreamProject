@@ -16,7 +16,7 @@ export const Home:React.FC<{}>=()=>{
     var [username,setUserName]=useState('')
     var locate=useLocation()  
     useEffect(()=>{
-        setUserName(locate.state.userName)
+        setUserName(locate?.state?.userName)
     },[])
     var myarray=[img1,img2,img3,img4]
     const Myarray:React.FC<{img:string}>=(props)=>{

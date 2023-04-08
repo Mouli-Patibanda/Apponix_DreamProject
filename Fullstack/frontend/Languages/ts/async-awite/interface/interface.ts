@@ -2,7 +2,7 @@
 // interface Mytype{
 //     caroot:number,
 //     cabbage:string,
-// }
+//  }
 // //Generic Concept
 // interface Veg<Mytype>{
     
@@ -42,9 +42,29 @@
 // fruits[1]='orange'
 // fruits.name='mango'
 // console.log(fruits)
-const a: any<{b:string}>=()=>{
-    return(b:+'apple')
+// const a:any<{b:string}>=(b)=>{
+//     return(b+'apple')
      
+// }
+
+class Human{
+  
+      eye:string;
+      nose:string;
+      constructor(){
+        this.eye='two',
+        this.nose='1'
+      }
+       witheyes(a:string){
+        return(a)
+      }
 }
-a({b:'hi'});
+const mouli=new Human
+mouli.eye='three'
+console.log(mouli.eye)
+console.log(mouli.witheyes('we watcg'))
+    
+//  const mouli= new Human{
+    
+// }
 

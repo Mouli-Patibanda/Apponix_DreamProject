@@ -1,7 +1,11 @@
-var myPromise = new Promise(function (res, rej) {
+var myPromise = new Promise(function (rej, res) {
     // res('iam working')
-    rej('iam rej');
+    var a = 5, b = 6;
+    if (a > b)
+        rej('iam fulfilled');
+    else
+        res('iam rej');
 });
-myPromise.then(function (a) { console.log(a); });
-myPromise["catch"](function (a) { console.log(a); });
+//myPromise.then((a)=>{console.log(a)})
+console.log(myPromise["catch"](function (a) { (a); }));
 console.log(myPromise);

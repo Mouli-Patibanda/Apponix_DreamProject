@@ -10,12 +10,14 @@ import img2 from './../../../assets/images/2.jpg'
 import img3 from './../../../assets/images/3.png'
 import img4 from './../../../assets/images/4.webp'
 
-export  const Mycards:React.FC<{img:string}>=(props) =>{
-//  var myarray={img1,img2,img3,img4}
+ export const Mycards:React.FC<{img:string}>=(props)=>{
+
+ 
 //  const Myarray:React.FC<{img:string}>=(props)=>{
 //   return<><img src={props.img} /></>
-//  }
+ 
   return (
+    <>
     <Card sx={{ maxWidth: 300 }}>
       <CardMedia
         sx={{ height: 140 }}
@@ -36,5 +38,6 @@ export  const Mycards:React.FC<{img:string}>=(props) =>{
         <Button size="small">Learn More</Button>
       </CardActions>
     </Card>
+    </>
   );
-}
+ }
