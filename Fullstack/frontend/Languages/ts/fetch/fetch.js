@@ -1,7 +1,8 @@
 var myfunc = function (a) {
-    // console.log(a.json())
-    return a.json();
+    console.log(a.json());
+    // return a.json()
 };
-var apiData = fetch("https://fakestoreapi.com/products");
-apiData.then(myfunc).then(function (a) { console.log(a); });
+var apiData = fetch("https//fakestoreapi.com/products");
 console.log(apiData);
+// apiData.then(myfunc )
+//  console.log(apiData,'aa')

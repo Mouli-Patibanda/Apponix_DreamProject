@@ -3,7 +3,7 @@ async function myfun() {
     apiData= await(await apiData).json()
     console.log(apiData)
     // ecommerce(apiData[0].title, apiData[0].image,apiData[0].description)
-    apiData.map((a)=>{
+         apiData.map((a)=>{
        ecommerce( a.title,a.image,a.description)
     })
     }
